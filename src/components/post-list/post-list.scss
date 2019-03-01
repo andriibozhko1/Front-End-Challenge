@@ -1,0 +1,78 @@
+.PostList {
+  text-align: center;
+  &__list {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+  }
+
+  &__item {   
+    display: inline-block;
+  }
+}
+
+.PostCard {
+  position: relative;
+  margin: 20px;  
+  background: #fff;
+  box-sizing: border-box;
+  border-radius: 10px;
+  overflow: hidden;  
+  width: 300px;  
+  box-shadow: 0px 0px 5px silver;
+  cursor: pointer;
+  font-family: sans-serif;
+  transition: .3s;
+  word-wrap: break-word;
+
+  &:hover {
+    box-shadow: 0px 0px 5px gray;
+    transform: perspective(500px) translateZ(20px);;
+  }
+
+  &__title {    
+    margin: 20px;
+    text-align: left;
+    padding: 10px;
+    font-size: 30px;
+    font-weight: 700;    
+  }
+
+  &__body {
+    font-style: italic;
+    text-align: left;
+    font-size: 18px;
+    font-weight: 100;
+    min-height: 200px;
+    padding: 10px;
+    margin: 10px;
+    border-top: 1px solid silver;
+    border-bottom: 1px solid silver;        
+  }
+
+  &__remove-btn {
+    background: #000;      
+    border: 1px solid black;
+    border-radius: 2px;
+    color: #fff;
+    font-size: 13px;
+    float: right;
+    margin: 7px;
+    padding: 7px;    
+    cursor: pointer;
+    transition: .3s;
+
+    &:hover {
+      background: #fff;
+      color: #000;
+    }
+  }
+  &__date {    
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    font-style: italic;
+    font-family: 18px;
+    font-weight: bold;
+  }
+}

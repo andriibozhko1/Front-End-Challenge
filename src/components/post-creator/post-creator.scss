@@ -1,0 +1,25 @@
+.PostCreator {
+  height: 120px;
+  width: 200px;
+  background: #fff;
+  box-shadow: 0px 0px 10px silver;
+  border-radius: 10px;
+  text-align: center;
+  padding: 10px;
+  font-family: sans-serif;
+  font-weight: 100;
+  transition: 0.5s;
+  cursor: pointer;
+
+  &__create-icons {
+    margin: 5% auto;
+    background: url("../../img/plus.svg");
+    background-size: 100%;
+    width: 60px;
+    height: 60px;
+  }
+
+  &:hover {
+    box-shadow: 0px 0px 20px gray;
+  }
+}
