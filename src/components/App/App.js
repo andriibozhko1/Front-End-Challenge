@@ -20,7 +20,7 @@ export default class App extends Component {
       });
   };
 
-  addPost = (title, body, date) => {
+  addPost = (title, body) => {
     fetch(`https://simple-blog-api.crew.red/posts`, {
       method: "POST",
       headers: {
