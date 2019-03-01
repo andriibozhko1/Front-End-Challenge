@@ -51,7 +51,8 @@ export default class PostViewer extends Component {
           title,
           body,
           date,
-          comments
+          comments,
+          comment: ''
         });
       });
   }
@@ -68,6 +69,11 @@ export default class PostViewer extends Component {
             value={this.state.comment}
             onChange={(event) => {
               this.changeCommentField(event.target.value)
+            }}
+            onKeyPress={(key) => {
+              if(key.key === 'Enter') {
+                this.sendComments()
+              }
             }}
             className="PostViewer__comments-field"
             type="text"
