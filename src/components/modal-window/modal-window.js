@@ -24,8 +24,7 @@ export default class ModalWindow extends Component {
       alert("Fill all fields");
       return;
     }
-    let date = new Date();
-    this.props.addPost(this.state.title, this.state.body, date);
+    this.props.addPost(this.state.title, this.state.body);
     this.setState(
       {
         title: "",
